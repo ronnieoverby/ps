@@ -1,0 +1,1 @@
+﻿Dir *.png | Rename-Item –NewName { $_.name –replace "(\D|^)(\d{1})(\D|$)", '${1}0$2$3' } -WhatIf
